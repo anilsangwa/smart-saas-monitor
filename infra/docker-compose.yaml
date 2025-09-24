@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  frontend:
+    build: ./../apps/frontend
+    ports:
+      - "3000:3000"
+  backend:
+    build: ./../apps/backend
+    ports:
+      - "4000:4000"
+  agent:
+    build: ./../apps/monitoring-agent
+    # ports:
+    #   - "5000:5000"
